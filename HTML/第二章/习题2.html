@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>调查问卷表表单</title>
+</head>
+<body>
+	<h2 style="background: red">个人资金投资者投资情况调查问卷</h2>
+    <form>
+	<p>
+		(1)您选择投资公募基金的主要原因是:(&nbsp;)<br>
+		<input type="radio" name="reason1" value="公募运作管理规范,信息披露全面,可以方便的查找相关信息,申购,赎回等很便利">公募运作管理规范,信息披露全面,可以方便的查找相关信息,申购,赎回等很便利<br>
+		<input type="radio" name="reason1" value="公募基金有比较强大的投研团队">公募基金有比较强大的投研团队<br>
+		<input type="radio" name="reason1" value="公募基金投资门槛低,对投资者没有太多的资质及投资金额要求">公募基金投资门槛低,对投资者没有太多的资质及投资金额要求
+	</p>
+	<p>
+		(2)您选择投资专户一对多基金的主要原因是:(&nbsp;)<br>
+		<input type="radio" name="reason2" value="专户一对多基金管理规范,同公募基金一样有比较强大的投研团队,切投资范围,投资比例较自由">专户一对多基金管理规范,同公募基金一样有比较强大的投研团队,切投资范围,投资比例较自由<br>
+		<input type="radio" name="reason2" value="专户一对多产品相对于公募基金有更强的针对性,可以更好的满足投资者的要求">专户一对多产品相对于公募基金有更强的针对性,可以更好的满足投资者的要求<br>
+		<input type="radio" name="reason2" value="其他">其他
+	</p>
+	<p>
+		(3)您希望获得哪方面的信息?(多选题)<br>
+		<input type="checkbox" name="need" value="产品设计理念">产品设计理念<br>
+		<input type="checkbox" name="need" value="投资思路">投资思路<br>
+		<input type="checkbox" name="need" value="基金经理介绍">基金经理介绍<br>
+		<input type="checkbox" name="need" value="购买渠道">购买渠道<br>
+		<input type="checkbox" name="need" value="购买费率">购买费率
+	</p>
+    </form>
+	<h2 style="background: red">如您希望获得抽奖机会,请留下如下信息</h2>
+	<form>
+		<p>
+			姓名:<input type="text" name="name">
+		</p>
+		<p>
+			手机:<input type="number" name="phone">
+		</p>
+		<p>
+			住址:<input type="text" name="address">
+		</p>
+		<p>
+			建议:<textarea cols="30" rows="10"></textarea>
+		</p>
+		<p>
+			<input type="submit" name="提交" value="提交">
+			<input type="reset" name="重置" value="重置">
+		</p>
+	</form>
+</body>
+</html>

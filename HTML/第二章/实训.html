@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>会员注册表</title>
+</head>
+
+<body>
+	<h2>会员注册</h2>
+	<form>
+		<p>
+		账号：<input type="text" pattern="^\w{6,12}$" required autofocus name="userid" id="userid" placeholder="您的账号（6到12位英文）" />
+		</p>
+		<p>
+		密码：<input type="password" required name="pass" id="pass" placeholder="您的密码" />
+		</p>
+		<p>
+		性别：<input type="radio" name="sex" value="男" checked="checked" />男
+			  <input type="radio" name="sex" value="女"  />女
+		</p>
+		<p>
+		爱好：<input type="checkbox" name="like" value="音乐" />音乐
+			  <input type="checkbox" name="like" value="上网" />上网
+			  <input type="checkbox" name="like" value="足球"checked />足球
+			  <input type="checkbox" name="like" value="下棋" />下棋
+		</p>
+		<p>
+		职业：<select size="3" name="work">
+				<option value="政府职员">政府职员</option>
+				<option value="工程师">工程师</option>
+				<option value="工人">工人</option>
+				<option value="教师">教师</option>
+				<option value="医生">医生</option>
+				<option value="学生">学生</option>
+			  </select>
+		</p>
+		<p>
+		收入：<select name="salary">
+				<option value="1000元以下">1000元以下</option>
+				<option value="1000-2000元">1000-2000元</option>
+				<option value="2000-3000元">2000-3000元</option>
+				<option value="3000-4000元">3000-4000元</option>
+				<option value="4000元以上">4000元以上</option>
+			  </select>
+		</p>
+		<p>
+			电子邮箱：<input type="email" required name="email" id="email" placeholder="您的电子邮箱" />
+		</p>
+		<p>
+			生日：<input type="data" min="1980-01-01" max="2012-3-16" name="birthday" id="birthday" value="1982-10-10" />
+		</p>
+		<p>
+			博客地址：<input type="url" name="blog" id="blog" placeholder="您的博客地址" />
+		</p>
+		<p>
+			年龄：<input type="number" name="age" id="age" value="25" autocomplete="off" placeholder="您的年龄" />
+		</p>
+		<p>
+			工作年限：<input type="range" min="1" step="1" max="20" name="slider" name="workingyear" id="workingyear" placeholder-"您的工作年限" value="3" />
+		</p>
+		<p>
+			个人简介：<textarea name="think" cols="40" rows="4"></textarea>
+		</p>
+		<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="提交" />&nbsp;&nbsp;
+									<input type="reset" name="reset" value="重写" />
+		</p>
+	</form>
+</body>
+</html>
